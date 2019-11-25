@@ -30,7 +30,6 @@ class PlaylistsController < ApplicationController
   end
 
   def destroy
-    byebug
   end
 
   private

@@ -1,6 +1,6 @@
- <div class="custom-list--item">
+<div class="custom-list--item">
                                     <div class="text-dark custom-card--inline">
-                                        <div class="custom-card--inline-img"><img src="<%= item.picture %>" alt="" class="card-img--radius-sm"></div>
+                                        <div class="custom-card--inline-img"><a href="<%= song_path item %>"><img src="<%= item.picture %>" alt="" class="card-img--radius-sm"></a></div>
                                         <div class="custom-card--inline-desc">
                                             <p class="text-truncate mb-0"><%= item.title %></p>
                                             <p class="text-truncate text-muted font-sm"><%= item.artist.name %></p>
@@ -20,3 +20,4 @@
                                         </li>
                                     </ul>
                                 </div>
+                    

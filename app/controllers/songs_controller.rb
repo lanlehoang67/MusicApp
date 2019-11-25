@@ -9,6 +9,7 @@ class SongsController < ApplicationController
   end
 
   def create
+    byebug
     check_song
   end
 

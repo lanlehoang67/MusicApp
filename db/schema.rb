@@ -151,7 +151,6 @@ ActiveRecord::Schema.define(version: 2019_07_07_104611) do
 
   create_table "songs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "artist_id"
-    t.string "url"
     t.string "title"
     t.string "content"
     t.string "length"

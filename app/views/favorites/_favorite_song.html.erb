@@ -1,11 +1,13 @@
 <div class="custom-list--item">
+    
     <div class="text-dark custom-card--inline">
-        <div class="custom-card--inline-img"><img src="<%= favorite_song.picture %>" alt="" class="card-img--radius-sm"></div>
+        <div class="custom-card--inline-img"><a href="<%= song_path favorite_song %>"><img src="<%= favorite_song.picture %>" alt="" class="card-img--radius-sm"></a></div>
         <div class="custom-card--inline-desc">
             <p class="text-truncate mb-0"><%= favorite_song.title %></p>
             <p class="text-truncate text-muted font-sm"><%= favorite_song.artist.name %></p>
         </div>
     </div>
+    </a>
     <ul class="custom-card--labels d-flex ml-auto">
         <li><span class="badge badge-pill badge-danger"><i class="la la-heart"></i></span></li>
         <li><span class="badge badge-pill badge-warning"><i class="la la-star"></i></span></li>

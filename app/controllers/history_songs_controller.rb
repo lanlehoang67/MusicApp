@@ -10,8 +10,11 @@ class HistorySongsController < ApplicationController
       @views = @song.views.nil? ? "1" : (@song.views.to_i  + 1)
       @song.update_attributes views: @views.to_s
       @song.save
-  		@history_song = HistorySong.new song_id: @song.id, user_id: current_user.id
- 		@history_song.save
+      @history_song_find = HistorySong.find_by song_id: @song.id
+      if @history_song_find.nil? 
+        @history_song = HistorySong.new song_id: @song.id, user_id: current_user.id
+        @history_song.save
+      end
   	end
   end
 

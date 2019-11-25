@@ -24,8 +24,8 @@ class Song < ApplicationRecord
   scope :find_by_genre, ->(genre_to_find){joins(:genres).where("genres.title = ? and songs.approved=true",genre_to_find) }
   scope :find_by_country, ->(country_to_find){where("songs.country = ? and songs.approved=true",country_to_find)}
   scope :trending, ->{where("songs.approved=true").order(views: :desc).limit(10)}
-  has_attached_file :picture
-  has_attached_file :url
+  has_attached_file :picture, validate_media_type: false
+  has_attached_file :url, validate_media_type: false
   do_not_validate_attachment_file_type :picture
   do_not_validate_attachment_file_type :url
   def check_admin

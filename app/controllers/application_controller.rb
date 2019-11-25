@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-    def load_recent_song
+  def load_recent_song
     @recent_songs = Song.recent
   end
 

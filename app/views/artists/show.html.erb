@@ -7,7 +7,6 @@
                                 <h5><%= @artist.name %></h5>
                                 <p><%= @artist.date_of_birth %></p>
                                 <div class="text-warning stars"><i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star-half-empty"></i></div>
-                                <div class="mt-4"><a href="javascript:void(0);" class="btn btn-pill btn-air btn-bold btn-danger">Play All</a></div>
                             </div>
                             <div class="col-xl-4 col-lg-6">
                                 <div class="pt-3 pt-lg-0 text-lg-right">
@@ -26,7 +25,7 @@
                     </ul>
                     <div class="tab-content" id="artistDetailsContent">
                         <div class="tab-pane fade show active" id="song" role="tabpanel" aria-labelledby="song-tab">
-                            <div class="row align-items-end"><span class="col-6 font-weight-bold">125 Track</span>
+                            <div class="row align-items-end"><span class="col-6 font-weight-bold"><%= @songs.count %> tracks</span>
                                 <div class="col-6 ml-auto">
                                     <form action="#" class="form-inline justify-content-end">
                                         <label class="mr-2" for="filter1">Sorted By:</label>
@@ -68,38 +67,6 @@
                         <div class="tab-pane fade show" id="bio" role="tabpanel" aria-labelledby="bio-tab">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex magnam magni odit praesentium, recusandae reiciendis sequi tempora? Ad commodi consequatur deleniti dolorum fugiat iste minima rerum sed similique voluptate.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="mb-4">
-                        <div class="d-flex mb-3"><span>Rate:</span>
-                            <div class="text-warning stars pl-2"><i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i></div>
-                        </div>
-                        <textarea name="comment" id="comment" cols="30" rows="5" class="form-control"></textarea>
-                        <div class="text-right mt-2">
-                            <button class="btn btn-info">Comment</button>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-4">
-                        <div class="avatar avatar-sm avatar-circle"><img src="../assets/images/users/thumb.jpg" alt=""></div>
-                        <div class="pl-3 flex-grow-1 flex-basis-0"><span class="d-block font-weight-bold mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing</span>
-                            <div class="text-warning stars mb-2 font-md"><i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star-half-empty"></i></div>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda commodi debitis eaque iusto labore, officiis perspiciatis quisquam! Cumque delectus excepturi ipsum maiores numquam officia omnis porro quae quam sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate est et eveniet excepturi exercitationem, fugiat incidunt nesciunt odio placeat reprehenderit sed soluta tempore velit voluptatum. Adipisci delectus nesciunt tempore!</p><a href="#" class="btn p-0"><i class="la la-reply"></i> Reply</a></div>
-                    </div>
-                    <div class="ml-5 mb-4">
-                        <div class="d-flex mb-4">
-                            <div class="avatar avatar-sm avatar-circle"><img src="../assets/images/users/thumb.jpg" alt=""></div>
-                            <div class="pl-3 flex-grow-1 flex-basis-0"><span class="d-block font-weight-bold mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing</span>
-                                <div class="text-warning stars mb-2 font-md"><i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star-half-empty"></i></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda commodi debitis eaque iusto labore, officiis perspiciatis quisquam! Cumque delectus excepturi ipsum maiores numquam officia omnis porro quae quam sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate est et eveniet excepturi exercitationem, fugiat incidunt nesciunt odio placeat reprehenderit sed soluta tempore velit voluptatum. Adipisci delectus nesciunt tempore!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="avatar avatar-sm avatar-circle"><img src="../assets/images/users/thumb.jpg" alt=""></div>
-                        <div class="pl-3 flex-grow-1 flex-basis-0"><span class="d-block font-weight-bold mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing</span>
-                            <div class="text-warning stars mb-2 font-md"><i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star"></i> <i class="la la-star-half-empty"></i></div>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda commodi debitis eaque iusto labore, officiis perspiciatis quisquam! Cumque delectus excepturi ipsum maiores numquam officia omnis porro quae quam sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cupiditate est et eveniet excepturi exercitationem, fugiat incidunt nesciunt odio placeat reprehenderit sed soluta tempore velit voluptatum. Adipisci delectus nesciunt tempore!</p><a href="#" class="btn p-0"><i class="la la-reply"></i> Reply</a></div>
                     </div>
                 </div>
             </div>
